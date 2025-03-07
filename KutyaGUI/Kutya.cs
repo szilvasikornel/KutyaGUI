@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -32,16 +32,17 @@ namespace KutyaGUI
 
         public override string ToString()
         {
-            string valami = string.Empty;
+            /*string valami = string.Empty;
             if (Kan) {
                 valami = "Kan";
             }
             else
             {
                 valami = "Szuka";
-            }
+            }*/
 
-            return $"{valami}\n"
+
+            return $"{(Kan ? "Kan" : "Szuka")}\n"
                 +  $"Fajta: {Fajta.FajtaNev}\n"
                 +  $"Gazda: {Gazda.GazdaNev}\n"
                 +  $"Telefon: {Gazda.GazdaTel}\n"
